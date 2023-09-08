@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fancybox.css">
+	<link rel="stylesheet" href="assets/css/web-style.css">
+</head>
+<body>
+
+
+	<div class="layout-wrapper">
+		<main class="main-content">
+			<section class="images-gallery-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="grid">
+								<div class="grid-item">
+									<div class="grid-innner-wrapper">
+										<a data-fancybox="gallery-images" href="assets/images/8.jpg">
+											<img src="assets/images/8.jpg">
+										</a>
+									</div>
+								</div>
+								<div class="grid-item">
+									<div class="grid-innner-wrapper">
+										<a data-fancybox="gallery-images" href="assets/images/9.jpg">
+											<img src="assets/images/9.jpg">
+										</a>
+									</div>
+								</div>
+								<div class="grid-item">
+									<div class="grid-innner-wrapper">
+										<a data-fancybox="gallery-images" href="assets/images/10.jpg">
+											<img src="assets/images/10.jpg">
+										</a>
+									</div>
+								</div>
+								<div class="grid-item">
+									<div class="grid-innner-wrapper">
+										<a data-fancybox="gallery-images" href="assets/images/11.jpg">
+											<img src="assets/images/11.jpg">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/fancybox.umd.js"></script>
+	<script src="assets/js/masonry.js"></script>
+
+	<script type="text/javascript">
+		$('.grid').masonry({
+                                itemSelector: '.grid-item',
+                                columnWidth: 400,
+                                fitWidth: true,
+                                horizontalOrder: true,
+                                gutter: 10
+                            });
+	</script>
+
+</body>
+</html>
